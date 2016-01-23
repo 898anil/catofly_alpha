@@ -28,12 +28,12 @@ $scope.signup = function($event){
     $event.preventDefault();
     console.log($scope.student)
     console.log('student signed up');
-    var promise = $kinvey.User.signup($scope.student);
+    var promise = $kinvey.User.signup(
+        $scope.student
+    );
     promise.then(function(user) {
-
-        console.log('user created');
 console.log(user);
-
+        console.log('user created');
     }, function(err) {
         console.log(err)
     });
