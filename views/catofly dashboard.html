@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="ng-scope mdl-js" ng-app="material-lite" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Material Lite Angular Admin Theme">
+  <meta name="author" content="Theme Guys - The Netherlands">
+
+  <title>catoFly</title>
+
+  <link href="files/css.css" rel="stylesheet">
+  <link href="files/icon.css" rel="stylesheet">
+  <link rel="stylesheet" href="files/vendors.css">
+  <link rel="stylesheet" href="files/demo.css">
+
+
+  <!-- IE Compatibility shims -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js""></script>
+  <![endif]-->
+  <!--[if IE]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/flexie/1.0.3/flexie.min.js"></script>
+  <![endif]-->
+  <!-- end shims -->
+
+<style>.ngf-hide{display:none !important}</style><style>.ag-no-transition{-webkit-transition: none !important;transition: none !important;} .angular-grid{position : relative;} .angular-grid > *{opacity : 0} .angular-grid > .angular-grid-item{opacity : 1}</style></head>
+
+<body class="ng-scope" ng-controller="MainController">
+  <!-- ngInclude: 'tpl/demo/app.html' --><div style="" id="app" class="app ng-scope" ng-include="'tpl/demo/app.html'"><div class="mdl-layout__container"><div data-upgraded=",MaterialLayout" class="demo-layout mdl-layout mdl-layout--fixed-drawer mdl-layout--fixed-header ng-scope mdl-js-layout is-upgraded">
+  <header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title ng-binding"><a href="#/dashboard">Dashboard </a> /Profile</span>
+    <div class="mdl-layout-spacer"></div>
+    <div data-upgraded=",MaterialTextfield" class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
+      <label data-upgraded=",MaterialButton" class="mdl-button mdl-js-button mdl-button--icon" for="search">
+        <i class="material-icons">search</i>
+      </label>
+      <div class="mdl-textfield__expandable-holder">
+        <input class="mdl-textfield__input" id="search" type="text">
+        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+      </div>
+    </div>
+
+    <button data-upgraded=",MaterialButton,MaterialRipple" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="notification">
+      <i class="material-icons">message</i>
+      <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+    <span class="notification-count">3</span>
+    </button>
+      <button data-upgraded=",MaterialButton,MaterialRipple" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="notification">
+          <i class="material-icons">notifications_none</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+          <span class="notification-count">3</span>
+      </button>
+    <button data-upgraded=",MaterialButton,MaterialRipple" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="settings">
+      <i class="material-icons">settings</i>
+      <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+    <div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul data-upgraded=",MaterialMenu,MaterialRipple" class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-js-ripple-effect--ignore-events" for="hdrbtn">
+      <li data-upgraded=",MaterialRipple" tabindex="-1" class="mdl-menu__item mdl-js-ripple-effect">About<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+      <li data-upgraded=",MaterialRipple" tabindex="-1" class="mdl-menu__item mdl-js-ripple-effect">Contact<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+      <li data-upgraded=",MaterialRipple" tabindex="-1" class="mdl-menu__item mdl-js-ripple-effect">Legal information<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+    </ul></div>
+  </div>  
+</header><!-- This directive uses the partial: src/tpl/demo/partials/header.html -->
+
+  <div class="demo-drawer mdl-layout__drawer mdl-color-text--blue-grey-50 mdl-color--grey-900">
+  <header class="mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+
+    <div class="clear user-info">
+      <div class="f-left m-l-30 m-r-10">
+        <img src="files/photo.png" class="demo-avatar img-responsive">
+      </div>
+      <div class="f-left">
+        <h4 class="mdl-color-text--white m-t-5 no-m-b">Ritesh Jain</h4>
+        <div class="mdl-color-text--blue-grey-400 f12">MEAN stack</div>
+      </div>
+    </div>
+
+  </header>
+
+  <ul ml-menu="" close-others="false" class="demo-navigation mdl-navigation">
+    <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+      <a class="mdl-navigation__link ng-scope" href="#/dashboard"><i class="mdl-color-text--blue-grey-400 material-icons">dashboard</i>Dashboard</a>
+    </li>
+    <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+      <a class="mdl-navigation__link ng-scope" href="#/profile"><i class="mdl-color-text--blue-grey-400 material-icons">recent_actors</i>Profile</a>
+    </li>
+    <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+      <a class="mdl-navigation__link ng-scope" href="#/projects"><i class="mdl-color-text--blue-grey-400 material-icons">library_books</i>Projects</a>
+    </li>
+    <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+      <a class="mdl-navigation__link ng-scope" href="#/exercises"><i class="mdl-color-text--blue-grey-400 material-icons">format_list_numbered</i>Exercises</a>
+    </li>
+
+
+    <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+      <a class="mdl-navigation__link ng-scope" href="#/execises"><i class="mdl-color-text--blue-grey-400 material-icons">trending_up</i>Quizzes</a>
+    </li>
+      <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+          <a class="mdl-navigation__link ng-scope" href="#/execises"><i class="mdl-color-text--blue-grey-400 material-icons">library_books</i>Materials</a>
+      </li>
+      <li class="ng-isolate-scope" ng-transclude="" ng-class="{ active: isActive }" ng-click="toggleActive()">
+          <a class="mdl-navigation__link ng-scope" href="#/execises"><i class="mdl-color-text--blue-grey-400 material-icons">work</i>Jobs</a>
+      </li>
+
+
+
+
+
+
+
+  </ul>
+</div><!-- This directive uses the partial: src/tpl/demo/partials/sidebar.html -->
+
+  <!-- ngView:  --><main class="mdl-layout__content mdl-color--grey-100 page ng-scope" ng-view=""><section class="ng-scope" ng-controller="DashboardController">
+
+  <div class="content-header relative clear " style="min-height: 220px;">
+
+    <div class="p-20">
+      <h3 class="mdl-color-text--white m-t-20 m-b-5">Profile</h3>
+      <h5 class="mdl-color-text--white m-b-25 no-m-t w100">Get all your profile info here</h5>
+    </div>
+      </div>
+      <div class="part-content profile">
+          <div class="part-content-inside row clearfix mdl-card mdl-shadow--1dp">
+              <div class="profile-photo-big">
+                  <img src="files/photo.png" class="circle">
+              </div>
+              <h2>Profile</h2>
+              <div class="left-part mdl-cell--7-col f-left">
+
+                  <div class="block clearfix">
+                      <div class="name f-left">Name</div>
+                      <div class="value f-left">Ritesh Jain</div>
+                  </div>
+                  <div class="block clearfix">
+                      <div class="name f-left">Course Enrolled</div>
+                      <div class="value f-left">MEAN Stack Development</div>
+                  </div>
+                  <div class="block clearfix">
+                      <div class="name f-left">Projects Completed</div>
+                      <div class="value f-left">3</div>
+                  </div>
+                  <div class="block clearfix">
+                      <div class="name f-left">Exercises Completed</div>
+                      <div class="value f-left">36</div>
+                  </div>
+                  <div class="block clearfix ">
+                      <div class="name f-left">Quizzes Completed</div>
+                      <div class="value f-left">29</div>
+                  </div>
+              </div>
+              <div class="right-part mdl-cell--5-col f-left">
+                  <div class="block clearfix">
+                      <div class="name f-left">Phone</div>
+                      <div class="value f-left">896754256</div>
+                  </div>
+                  <div class="block clearfix">
+                      <div class="name f-left">Email</div>
+                      <div class="value f-left">ritesh.jain@gmail.com</div>
+                  </div>
+                  <div class="block clearfix">
+                      <div class="name f-left">Address</div>
+                      <div class="value f-left">Ameerpet, Hyderabad, Telangana</div>
+                  </div>
+              </div>
+              <div class="project-summary-block cleartotal">
+                  <h4>Projcts Summary</h4>
+                  <div class="projects clearfix">
+                      <div class="project f-left mdl-cell--4-col">
+                          <div class="mdl-shadow--2dp clearfix">
+                              <div class="name">Weather App</div>
+                              <div class="date">21/12/2015</div>
+                              <div class="links">
+                                  <button class="mdl-button mdl-button--colored">View</button>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="project f-left mdl-cell--4-col">
+                          <div class="mdl-shadow--2dp clearfix">
+                              <div class="name">Chat Application</div>
+                              <div class="date">21/12/2015</div>
+                              <div class="links">
+                                  <button class="mdl-button mdl-button--colored">View</button>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="project f-left mdl-cell--4-col">
+                          <div class="mdl-shadow--2dp clearfix">
+                              <div class="name">CMS <Application></Application></div>
+                              <div class="date">21/12/2015</div>
+                              <div class="links">
+                                  <button class="mdl-button mdl-button--colored">View</button>
+                              </div>
+                          </div>
+
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+</main>
+</div></div>
+</div>
+
+  
+  <script src="files/analytics.js" async=""></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-62479268-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+
+  <script src="files/vendors.js"></script>
+  <script src="files/demo.js"></script>
+
+
+</body></html>
