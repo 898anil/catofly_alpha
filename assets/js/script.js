@@ -12,3 +12,6 @@ app.run(['$kinvey',function($kinvey){
 app.controller('loginController',['$kinvey','$scope',function($kinvey,$scope){
     console.log('contoller initialised');
 }])
+app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$scope){
+    console.log('contoller initialised');
+}])

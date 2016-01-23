@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student SignUp</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="../files/demo.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" media="screen,projection"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="catofly">
+
+<header>
+
+</header>
+<div class="main-container">
+    <br><br>
+    <div class="main-container-inside">
+        <div class="login-page">
+            <div class="form tinyform whiteback middlepadded" ng-controller='studentSignupController'>
+
+                <form name="studentsignup" ng-submit="signup($event)">
+
+                    <div><h3>Signup</h3></div>
+                    <div class="input-field">
+                        <input type="text" name="firstName" ng-model="firstName" id="studentFirstname" required >
+                        <div  ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required"> required.</div>
+                        <label for="studentFirstname">First Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="lastName" ng-model="lastName" id="studentLastname" required >
+                        <div  ng-show="studentsignup.lastName.$touched && studentsignup.lastName.$error.required"> required.</div>
+                        <label for="studentLastname">Last Name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="age" ng-model="age" id="studentage" required >
+                        <div  ng-show="studentsignup.age.$touched && studentsignup.age.$error.required"> required.</div>
+
+                        <label for="studentage">Age</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="studentphone" ng-model="phone" name="phone" required>
+                        <div  ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required"> required.</div>
+                        <label for="studentphone">Phone Number</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="studentEmail"  ng-model="studentEmail" name="studentemail" required>
+                        <div  ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.email">valid email</div>
+                        <div  ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.required">required email</div>
+
+                        <label for="studentEmail" >Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" ng-model="password" id="studentpassword"  required>
+                        <div  ng-show="studentsignup.password.$touched && studentsignup.password.$error.required">required password</div>
+                        <label for="studentpassword">Password</label>
+                    </div>
+
+                    <button type="submit" value="Signup">Signup</button>
+                </form>
+                <!--<a href="/student_signup.html">Signup here</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
