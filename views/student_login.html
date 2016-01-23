@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Student Login</title>
+
     <meta charset="utf8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link rel="stylesheet" href="../files/demo.css">
@@ -14,18 +16,26 @@
 
     </header>
     <div class="main-container">
+        <br><br>
         <div class="main-container-inside">
             <div class="login-page">
-                <div class="form tinyform whiteback middlepadded" ng-controller='loginController'>
-                    <form>
-                        <div class="input-field">
-                            <label>Username</label>
-                            <input type="text" placeholder="Username"/>
+                <div class="form tinyform whiteback middlepadded" ng-controller='studentLoginController'>
+                    <h3 class="form-header">Login</h3>
+                    <form name="loginForm" ng-submit="studentLogin($event)" novalidate>
+                        <div class="username-block input-field">
+                            <input type="text" name="username" ng-model="student.username" placeholder="Username" required>
+                            <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched">
+                                Username Required
+                            </div>
                         </div>
-                        <input type="password" placeholder="Password">
-                        <button type="submit" value="Login">Login</button>
+                        <div class="password-block input-field">
+                            <input type="password" name="password" ng-model="student.password" placeholder="Password" required>
+                            <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched">
+                                Password Required
+                            </div>
+                        </div>
+                        <input type="submit" value="login" ng-disabled="!loginForm.$valid">
                     </form>
-                    <a href="/student_signup.html">Signup here</a>
                 </div>
             </div>
         </div>
@@ -33,6 +43,10 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 <script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
 <script src="../assets/js/script.js"></script>
 </body>
 </html>
+
