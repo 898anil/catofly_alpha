@@ -193,6 +193,10 @@ padding-left: 15px;
 {
     width:400px;
 }
+.form.smallform
+{
+    width:650px;
+}
 .whiteback
 {
     background:white;
@@ -200,4 +204,9 @@ padding-left: 15px;
 .middlepadded
 {
     padding:20px;
+}
+.form-error
+{
+    color:red;
+    font-size: 13px;
 }
