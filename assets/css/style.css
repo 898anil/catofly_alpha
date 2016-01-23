@@ -1,0 +1,203 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Roboto,sans-serif;
+    font-size:14px;
+    height: 100%;
+    padding:0   30px;
+    background: url('../../files/blurback1.jpg');
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+.left
+{
+    float:left;
+}
+.right
+{
+    float:right;
+}
+.center
+{
+    text-align: center;
+}
+.circle
+{
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.clearfix:after,.cleartotal:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cleartotal,.cleartop
+{
+    clear: both;
+}
+.logo img
+{
+    max-width: 70px;
+}
+.user-photo img
+{
+    max-width: 50px;
+    margin-right:20px;
+}
+.dashboard-nav li a
+{
+    padding:13px 20px;
+    display: block;
+    color:#ababab;
+}
+.dashboard-right .block
+{
+    padding:15px;
+
+}
+.dashboard-right{
+    width:calc(100% - 210px);
+}
+.dashboard-right .block .value
+{
+    float:left;
+
+}
+
+.dashboard-nav{
+    background-color:rgba(51, 68, 85, 0.26)  ;
+    width: 210px;
+    height: calc(100% - 70px);
+}
+.left-tabs a:hover{
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+
+}
+.header-class{
+    height: 62px;
+}
+
+.photo-tab{
+    color: white;
+    padding: 15px;
+}
+.content-holder{
+}
+
+.header_tag{
+    height: 62px;
+    width: auto;
+    /*background-color: rgba(253, 255, 238, 0.91);*/
+padding-left: 15px;
+    line-height: 62px;
+
+}
+.header_tag
+{
+    color:white;
+    font-weight:300;
+    font-size: 25px;
+}
+.logo img
+{
+    vertical-align: middle;
+}
+.logo .logo-text
+{
+    vertical-align: middle;
+    color:rgba(230,230,230,0.7);
+    font-size: 25px;
+    font-weight: 300;
+}
+.logo
+{
+    display: block;
+    width:auto;
+    height:auto;
+}
+.main-container-inside.dashboard
+{
+    padding:20px 0;
+}
+.user-details .course
+{
+    color:#aaa !important;
+    font-size: 12px;
+}
+.dashboard-right-inside
+{
+    padding:20px 30px;
+}
+.dashboard-right .block
+{
+    padding:10px;
+}
+.dashboard-right .block:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+.dashboard-right .block .name
+{
+    font-weight: 300;
+    float:left;
+    width:250px;
+}
+.dashboard-right .block .value
+{
+    font-weight: 500;
+}
+.project
+{
+    padding: 15px;
+    padding-bottom: 10px;
+    background: rgba(28, 150, 159, 0.44);
+    color:white;
+}
+.project .project-name
+{
+    font-weight: 500 !important;
+}
+.project .project-completion-date
+{
+    font-weight: 200 !important;
+}
+.projects
+{
+    padding: 30px 10px;
+}
+.card-panel
+{
+    box-shadow: unset;
+    background-color: rgba(255,255,255,0.8);
+}
+.form
+{
+    margin: 0 auto;
+}
+.form.tinyform
+{
+    width:400px;
+}
+.whiteback
+{
+    background:white;
+}
+.middlepadded
+{
+    padding:20px;
+}
