@@ -22,4 +22,3 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
     }
 }])
 console.log('chanes');
-console.log('second change');
