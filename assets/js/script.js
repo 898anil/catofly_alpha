@@ -35,7 +35,7 @@ $scope.signup = function($event){
 console.log(user);
         console.log('user created');
     }, function(err) {
-        console.log(err)
+        console.log(err);
     });
 }
 
