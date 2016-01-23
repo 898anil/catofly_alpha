@@ -22,6 +22,6 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
     }
 }]);
 app.controller('studentsignupController',['$kinvey','$scope',function($kinvey,$scope){
-//dfrgdgf
+    console.log('studentsignup1235462') }])
 
 
