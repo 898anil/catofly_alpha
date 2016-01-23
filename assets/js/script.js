@@ -24,5 +24,6 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
 app.controller('studentsignupController',['$kinvey','$scope',function($kinvey,$scope){
     console.log('studentsignup1235462') }])
 //sfgdfdjhgjkdg
+console.log('studentsignup1235462');
 
 
