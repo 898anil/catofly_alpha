@@ -20,6 +20,8 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
             $scope.loginError = "Incorrect username or password";
         })
     }
-}])
-console.log('chanes');
-var p;
+}]);
+app.controller('studentsignupController',['$kinvey','$scope',function($kinvey,$scope){
+    console.log('studentsignup') }])
+
+
