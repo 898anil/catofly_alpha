@@ -24,19 +24,18 @@
                     <form name="loginForm" ng-submit="studentLogin($event)" novalidate>
                         <div class="username-block input-field">
                             <input type="text" name="username" ng-model="student.username" placeholder="Username" required>
-                            <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched">
-                                Username Required
+                            <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched" ng-bind="'Username Required'">
                             </div>
                         </div>
                         <div class="password-block input-field">
                             <input type="password" name="password" ng-model="student.password" placeholder="Password" required>
-                            <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched">
-                                Password Required
+                            <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched" ng-bind="'Password Required'">
                             </div>
                         </div>
                         <input type="submit" value="login" ng-disabled="!loginForm.$valid">
                     </form>
                     <div>signup</div>
+                    <button ng-show="userloggedin" ng-click = "studentlogout()">Logout</button>
                     <div></div>
                 </div>
             </div>
@@ -49,6 +48,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
 <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/controllers/studentLoginController.js"></script>
 </body>
 </html>
 

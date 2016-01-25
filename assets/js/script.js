@@ -14,7 +14,6 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
         console.log($scope.student);
         var login = $kinvey.User.login($scope.student);
         login.then(function(user){
-
             console.log('user logged in' + user._id);
         },function(err){
             console.log(err.message);
