@@ -6,7 +6,7 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
         var login = $kinvey.User.login({username:$scope.student.username,password:$scope.student.password});
         login.then(function(user){
             console.log('user logged in' + user._id);
-            location.href="catofly/views/catofly-dashboard2.html";
+            location.href="catofly-dashboard2.html";
         },function(err){
             console.log(err.message);
             $scope.loginError = "Incorrect username or password";
