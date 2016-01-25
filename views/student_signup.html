@@ -24,43 +24,43 @@
 
                     <div><h3>Signup</h3></div>
                     <div class="input-field">
-                        <input type="text" name="firstName" ng-model="firstName" id="studentFirstname" required >
-                        <div  ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required"> required.</div>
+                        <input type="text" name="firstName" ng-model="student.firstName" id="studentFirstname" required >
+                        <div  class="form-error" ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required"> required.</div>
                         <label for="studentFirstname">First Name</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" name="lastName" ng-model="lastName" id="studentLastname" required >
-                        <div  ng-show="studentsignup.lastName.$touched && studentsignup.lastName.$error.required"> required.</div>
+                        <input type="text" name="lastName" ng-model="student.lastName" id="studentLastname" required >
+                        <div  class="form-error" ng-show="studentsignup.lastName.$touched && studentsignup.lastName.$error.required"> required.</div>
                         <label for="studentLastname">Last Name</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="age" ng-model="age" id="studentage" required >
-                        <div  ng-show="studentsignup.age.$touched && studentsignup.age.$error.required"> required.</div>
+                        <input type="text" name="age" ng-model="student.age" id="studentage" required >
+                        <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required"> required.</div>
 
                         <label for="studentage">Age</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" id="studentphone" ng-model="phone" name="phone" required>
-                        <div  ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required"> required.</div>
+                        <input type="text" id="studentphone" ng-model="student.phone" name="phone" required>
+                        <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required"> required.</div>
                         <label for="studentphone">Phone Number</label>
                     </div>
                     <div class="input-field">
-                        <input type="email" id="studentEmail"  ng-model="studentEmail" name="studentemail" required>
-                        <div  ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.email">valid email</div>
-                        <div  ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.required">required email</div>
+                        <input type="email" id="studentEmail"  ng-model="student.username "  name="studentemail" required>
+                        <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.email">valid email</div>
+                        <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.required">required email</div>
 
                         <label for="studentEmail" >Email</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="password" ng-model="password" id="studentpassword"  required>
-                        <div  ng-show="studentsignup.password.$touched && studentsignup.password.$error.required">required password</div>
+                        <input type="password" name="password" ng-model="student.password" id="studentpassword"  required>
+                        <div  class="form-error" ng-show="studentsignup.password.$touched && studentsignup.password.$error.required">required password</div>
                         <label for="studentpassword">Password</label>
                     </div>
 
                     <button type="submit" value="Signup">Signup</button>
                 </form>
-                <!--<a href="/student_signup.html">Signup here</a>-->
+                <a href="/student_signup.html">Signup here</a>
             </div>
         </div>
     </div>
@@ -70,7 +70,8 @@
 <script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
 <script src="../assets/js/script.js"></script>
+<script src="../assets/js/controllers/studentSignupController.js"></script>
+
 </body>
 </html>
