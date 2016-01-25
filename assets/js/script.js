@@ -3,7 +3,7 @@ var initpromise;
 app.run(['$kinvey',function($kinvey){
     initpromise = $kinvey.init({
         appKey    : 'kid_-1BQ6Fwa3l',
-            appSecret : '6f53464a60a54ee789fa20a27b424c74'
+        appSecret : '6f53464a60a54ee789fa20a27b424c74'
     })
 }])
 
@@ -24,23 +24,21 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
 app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$scope){
     console.log('studentsignup1235462')
 
-$scope.signup = function($event){
-    $event.preventDefault();
-    console.log($scope.student)
-    console.log('student signed up');
-    var promise = $kinvey.User.signup(
-        $scope.student
-    );
-    promise.then(function(user) {
-console.log(user);
-        console.log('user created');
-    }, function(err) {
-        console.log(err);
-        //kkm
-    });
-}
+    $scope.signup = function($event){
+        $event.preventDefault();
+        console.log($scope.student)
+        console.log('student signed up');
+        var promise = $kinvey.User.signup(
+            $scope.student
+        );
+        promise.then(function(user) {
+            console.log(user);
+            console.log('user created');
+        }, function(err) {
+            console.log(err);
+            //kkm
+        });
+    }
 
 
 }])
-
-
