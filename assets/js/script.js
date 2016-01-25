@@ -7,39 +7,3 @@ app.run(['$kinvey',function($kinvey){
     })
 }])
 
-app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$scope){
-    $scope.studentLogin = function($event){
-        $event.preventDefault();
-        console.log('form submitted');
-        console.log($scope.student);
-        var login = $kinvey.User.login($scope.student);
-        login.then(function(user){
-            console.log('user logged in' + user._id);
-        },function(err){
-            console.log(err.message);
-            $scope.loginError = "Incorrect username or password";
-
-        })
-    }
-}]);
-app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$scope){
-    console.log('studentsignup1235462')
-
-    $scope.signup = function($event){
-        $event.preventDefault();
-        console.log($scope.student)
-        console.log('student signed up');
-        var promise = $kinvey.User.signup(
-            $scope.student
-        );
-        promise.then(function(user) {
-            console.log(user);
-            console.log('user created');
-        }, function(err) {
-            console.log(err);
-            //kkm
-        });
-    }
-
-
-}])

@@ -1,6 +1,4 @@
-/**
- * Created by jellyglass on 25/1/16.
- */
+
 app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$scope){
     console.log('studentsignup1235462');
     $scope.signup = function($event){
