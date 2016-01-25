@@ -15,10 +15,17 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
 
     }
     $scope.studentlogout = function(){
-        Kinvey.User.logout();
+        var logout = Kinvey.User.logout();
+        logout.then(function(){
+            console.log('student logged out');
+        },
+        function(){
+            console.log('error occured');
+        })
     }
     initpromise.then(function(){
         $scope.userloggedin = Kinvey.getActiveUser();
     })
 
 }]);
+//dsfsdf
