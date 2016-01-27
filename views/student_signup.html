@@ -35,14 +35,18 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="age" ng-model="student.age" id="studentage"  required >
-                        <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required" ng-bind="'required'"> </div>
+                        <input type="number" name="age" ng-model="student.age" min="1" max="100" id="studentage"  required >
+                        <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required " ng-bind="'required'"> </div>
+                        <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.max " ng-bind="'max age is 99'"> </div>
+                        <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.min " ng-bind="'min age is 1'"> </div>
 
                         <label for="studentage">Age</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" id="studentphone" ng-model="student.phone" name="phone"  required>
-                        <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required" ng-bind="'required'"> </div>
+                        <input type="number" id="studentphone" ng-model="student.phone" ng-maxlength="10" name="phone"  required>
+                        <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required " ng-bind="'required'"> </div>
+                        <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.maxlength " ng-bind="'Check Your PhoneNumber'"> </div>
+
                         <label for="studentphone">Phone Number</label>
                     </div>
                     <div class="input-field">

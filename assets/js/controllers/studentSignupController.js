@@ -13,9 +13,6 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
             password: $scope.student.password });
         signup.then(function(user) {
             console.log(user.name)
-            if(user.name == "UserAlreadyExists") {
-                alert('user already exists')
-            }
 
 
 
@@ -39,6 +36,10 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
             //cns
         }, function(err) {
             console.log(err);
+            if(err.name == "UserAlreadyExists") {
+                alert('user already exists')
+            }
+
         });
 
     }
