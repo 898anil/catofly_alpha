@@ -197,9 +197,13 @@ padding-left: 15px;
 {
     background:white;
 }
-.middlepadded
+.mediumpadded
 {
     padding:20px;
+}
+.smallpadded
+{
+    padding:10px;
 }
 .form-error{
     color: red;

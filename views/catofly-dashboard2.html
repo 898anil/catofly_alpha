@@ -2,7 +2,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-        <link rel="stylesheet" href="../files/demo.css">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="../assets/css/style.css" media="screen,projection"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
@@ -13,7 +12,7 @@
                 <div class="logo left">
                     <img src="../files/logo2.png" /><span class="logo-text">catoFly</span>
                 </div>
-                <div class="top-navigation right">
+                <div class="top-navigation mediumpadded right">
                     <div class="options">
                         <div class="logout-contoller" ng-controller="logoutController">
                             <button class="logout" ng-click = "logout()">Logout</button>
@@ -34,7 +33,7 @@
                         </div>
                         <div class="user-details">
                             <div class="user-name">
-                                Ritesh Jain
+
                             </div>
                             <div class="course">
                                 MEAN Stack
@@ -128,32 +127,32 @@
                             <div class="main-content profile-summary" ng-controller="studentProfileSummaryController">
                                 <div class="block">
                                     <div class="name">Name</div>
-                                    <div class="value">{{user.firstName + " " + user.lastName}}</div>
+                                    <div class="value" ng-bind='user.firstName + " " + user.lastName'></div>
                                 </div>
 
                                 <div class="block">
                                     <div class="name">Phone Number</div>
-                                    <div class="value">{{user.phone}}</div>
+                                    <div class="value" ng-bind="user.phone"></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Email</div>
-                                    <div class="value">{{user.username}}</div>
+                                    <div class="value" ng-bind="user.username"></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Course Enrolled</div>
-                                    <div class="value">{{user.course | undefinedFilter:'No Course Enrolled'}}</div>
+                                    <div class="value" ng-bind="user.course | undefinedFilter:'No Course Enrolled'"></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Projects Completed</div>
-                                    <div class="value">{{user.projects.length | undefinedFilter:0}}</div>
+                                    <div class="value" ng-bind="user.projects.length | undefinedFilter:0"></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Exercises Completed</div>
-                                    <div class="value">{{user.exercises.length | undefinedFilter:0 }}</div>
+                                    <div class="value" ng-bind="user.exercises.length | undefinedFilter:0"></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Quizzes Completed</div>
-                                    <div class="value">{{user.quizzes.length | undefinedFilter:0}}</div>
+                                    <div class="value" ng-bind="user.quizzes.length | undefinedFilter:0"></div>
                                 </div>
                                 <div class="projects cleartotal">
                                     <p>Projects Summary</p>
