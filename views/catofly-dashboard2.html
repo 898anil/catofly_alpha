@@ -9,11 +9,11 @@
     </head>
     <body ng-app="catofly">
         <div class="main-container">
-            <header class=" header-class">
-                <div class="logo">
+            <header class="main-header clearfix">
+                <div class="logo left">
                     <img src="../files/logo2.png" /><span class="logo-text">catoFly</span>
                 </div>
-                <div class="top-navigation">
+                <div class="top-navigation right">
                     <div class="options">
                         <div class="logout-contoller" ng-controller="logoutController">
                             <button class="logout" ng-click = "logout()">Logout</button>
@@ -22,6 +22,8 @@
                 </div>
             </header>
             <div class="main-container-inside dashboard">
+
+
 
 
                 <div class="dashboard-left dashboard-nav  left">
@@ -67,11 +69,55 @@
                 </div>
                 <div class="dashboard-right left profile-container">
                     <header class=" header_tag">
-                                       <div >DashBoard</div>
+                        <div >DashBoard</div>
                         <div class="top-navigation">
 
                         </div>
-                        </header>
+                    </header>
+
+                    <!--<div class="preloader-wrapper big active" ng-if="!preLoader">-->
+                        <!--<div class="spinner-layer spinner-blue">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-red">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-yellow">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-green">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
                     <div class="dashboard-right-inside" ng-controller="studentProfileController">
                         <div class="content-holder card-panel">
                             <div class="content-header">
@@ -95,19 +141,19 @@
                                 </div>
                                 <div class="block">
                                     <div class="name">Course Enrolled</div>
-                                    <div class="value">{{user.course}}<span ng-if="!user.projects.length">No Course</span></div>
+                                    <div class="value">{{user.course | undefinedFilter:'No Course Enrolled'}}</div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Projects Completed</div>
-                                    <div class="value">{{user.projects.length}}<span ng-if="!user.projects.length">0</span></div>
+                                    <div class="value">{{user.projects.length | undefinedFilter:0}}</div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Exercises Completed</div>
-                                    <div class="value">{{user.exercises.length}}<span ng-if="!user.exercises.length">0</span></div>
+                                    <div class="value">{{user.exercises.length | undefinedFilter:0 }}</div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Quizzes Completed</div>
-                                    <div class="value">{{user.quizzes.length}}<span ng-if="!user.quizzes.length">0</span></div>
+                                    <div class="value">{{user.quizzes.length | undefinedFilter:0}}</div>
                                 </div>
                                 <div class="projects cleartotal">
                                     <p>Projects Summary</p>
@@ -135,4 +181,5 @@
     <script src="../assets/js/controllers/logoutController.js"></script>
     <script src="../assets/js/controllers/studentProfileSummaryController.js"></script>
     <script src="../assets/js/controllers/studentProfileController.js"></script>
+    <script src="../assets/js/filters/undefinedFilter.js"></script>
 </html>

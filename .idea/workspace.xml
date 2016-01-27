@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89a8c759-7331-44f6-9e60-876f90a813e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/catofly-dashboard2.html" afterPath="$PROJECT_DIR$/views/catofly-dashboard2.html" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,12 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catofly-dashboard2.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="catofly-dashboard2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/catofly-dashboard2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
-              <caret line="84" column="90" selection-start-line="84" selection-start-column="90" selection-end-line="84" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.80097085">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="undefinedFilter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/filters/undefinedFilter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,19 +89,17 @@
         <entry file="file://$PROJECT_DIR$/assets/js/controllers/studentProfileController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="3" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
+              <caret line="3" column="3" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentProfileSummaryController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="studentProfileSummaryController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/controllers/studentProfileSummaryController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30373833">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -145,10 +154,11 @@
         <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/views/student_login.html" />
         <option value="$PROJECT_DIR$/assets/js/controllers/studentProfileController.js" />
-        <option value="$PROJECT_DIR$/assets/js/controllers/studentProfileSummaryController.js" />
         <option value="$PROJECT_DIR$/views/student_signup.html" />
         <option value="$PROJECT_DIR$/assets/js/controllers/studentSignupController.js" />
         <option value="$PROJECT_DIR$/assets/js/controllers/studentLoginController.js" />
+        <option value="$PROJECT_DIR$/assets/js/controllers/studentProfileSummaryController.js" />
+        <option value="$PROJECT_DIR$/assets/js/filters/undefinedFilter.js" />
         <option value="$PROJECT_DIR$/views/catofly-dashboard2.html" />
       </list>
     </option>
@@ -258,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,8 +324,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/js/controllers/studentSignupController.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/student_signup.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/js/controllers/studentProfileController.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/catofly-dashboard2.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -496,7 +506,25 @@
       <option name="project" value="LOCAL" />
       <updated>1453879807735</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="profile done">
+      <created>1453883438211</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1453883438211</updated>
+    </task>
+    <task id="LOCAL-00006" summary="profile done">
+      <created>1453884873095</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1453884873095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="student dashboard chnages&#10;">
+      <created>1453886301682</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1453886301682</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +558,9 @@
     <MESSAGE value="signup page" />
     <MESSAGE value="vey" />
     <MESSAGE value="signin fixed&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="signin fixed&#10;" />
+    <MESSAGE value="profile done" />
+    <MESSAGE value="student dashboard chnages&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="student dashboard chnages&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -745,10 +775,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/controllers/studentProfileSummaryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controllers/studentProfileController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <caret line="3" column="3" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/filters/undefinedFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
@@ -757,19 +805,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/catofly-dashboard2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="84" column="90" selection-start-line="84" selection-start-column="90" selection-end-line="84" selection-end-column="90" />
+        <state vertical-scroll-proportion="0.80097085">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/controllers/studentProfileSummaryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30373833">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

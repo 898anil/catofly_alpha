@@ -1,7 +1,7 @@
 /**
  * Created by jellyglass on 27/1/16.
  */
-app.controller('studentProfileSummaryController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('studentProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
     initpromise.then(function(){
         if($kinvey.getActiveUser()==null) {
             location.href = "student_login.html";
@@ -14,6 +14,7 @@ app.controller('studentProfileSummaryController',['$kinvey','$scope',function($k
         var userdata = $kinvey.DataStore.get('studentUserlist',_id);
         userdata.then(function(userData){
             $scope.user = userData;
+            $rootScope.preLoader = true;
         })
     })
 }])
