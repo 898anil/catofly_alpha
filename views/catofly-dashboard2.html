@@ -84,6 +84,15 @@
                                     <div class="name">Name</div>
                                     <div class="value">{{user.firstName + " " + user.lastName}}</div>
                                 </div>
+
+                                <div class="block">
+                                    <div class="name">Phone Number</div>
+                                    <div class="value">{{user.phone}}</div>
+                                </div>
+                                <div class="block">
+                                    <div class="name">Email</div>
+                                    <div class="value">{{user.username}}</div>
+                                </div>
                                 <div class="block">
                                     <div class="name">Course Enrolled</div>
                                     <div class="value">{{user.course}}<span ng-if="!user.projects.length">No Course</span></div>
