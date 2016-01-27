@@ -9,4 +9,12 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'student/profile.html',
         controller: 'studentProfileController'
     })
+        .when('/exercises',{
+            templateUrl: 'student/exercises.html',
+            controller: 'studentExercisesController'
+        })
+        .when('/quiz',{
+            templateUrl: 'student/quiz.html',
+            controller: 'studentQuizController'
+        })
 }])
