@@ -3,7 +3,7 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
         function(){
             if($kinvey.getActiveUser() !== null)
             {
-                location.href="catofly-dashboard2.html";
+                location.href="Student-dashboard.html";
             }
         }
     )
@@ -15,7 +15,7 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
             var login = Kinvey.User.login($scope.student.username, $scope.student.password);
             login.then(function (user) {
                 console.log('user logged in' + user._id);
-                location.href = "catofly-dashboard2.html";
+                location.href = "Student-dashboard.html";
             }, function (err) {
                 console.log('error occured');
                 $scope.loginError = "err.message";

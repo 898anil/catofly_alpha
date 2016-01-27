@@ -5,9 +5,9 @@
 
     <meta charset="utf8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <link rel="stylesheet" href="../files/demo.css">
+    <link rel="stylesheet" href="../../files/demo.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../assets/css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" media="screen,projection"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 </head>
 <body ng-app="catofly">
@@ -33,7 +33,7 @@
                             <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
                             </div>
                         </div>
-                        <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus">
+                        <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus"></button>
                     </form>
                     <a href="student_signup.html">Signup</a>
                     <!--<button ng-show="userloggedin" ng-click = "studentlogout()">Logout</button>-->
@@ -48,8 +48,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
-<script src="../assets/js/script.js"></script>
-    <script src="../assets/js/controllers/studentcontroller/studentLoginController.js"></script>
+<script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/controllers/studentcontroller/studentLoginController.js"></script>
 </body>
 </html>
 
