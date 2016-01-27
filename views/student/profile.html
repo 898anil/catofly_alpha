@@ -1,0 +1,52 @@
+<div ng-controller="studentProfileController">
+    <div class="content-holder card-panel">
+        <div class="content-header">
+            <h3 class="page-header">
+                Profile
+            </h3>
+        </div>
+        <div class="main-content profile-summary" ng-controller="studentProfileSummaryController">
+            <div class="block">
+                <div class="name">Name</div>
+                <div class="value" ng-bind='user.firstName + " " + user.lastName'></div>
+            </div>
+
+            <div class="block">
+                <div class="name">Phone Number</div>
+                <div class="value" ng-bind="user.phone"></div>
+            </div>
+            <div class="block">
+                <div class="name">Email</div>
+                <div class="value" ng-bind="user.username"></div>
+            </div>
+            <div class="block">
+                <div class="name">Course Enrolled</div>
+                <div class="value" ng-bind="user.course | undefinedFilter:'No Course Enrolled'"></div>
+            </div>
+            <div class="block">
+                <div class="name">Projects Completed</div>
+                <div class="value" ng-bind="user.projects.length | undefinedFilter:0"></div>
+            </div>
+            <div class="block">
+                <div class="name">Exercises Completed</div>
+                <div class="value" ng-bind="user.exercises.length | undefinedFilter:0"></div>
+            </div>
+            <div class="block">
+                <div class="name">Quizzes Completed</div>
+                <div class="value" ng-bind="user.quizzes.length | undefinedFilter:0"></div>
+            </div>
+            <div class="projects cleartotal">
+                <p>Projects Summary</p>
+                <div class="project mdl-shadow--2dp clearfix mdl-cell--4-col-desktop">
+                    <div class="project-name">
+                        Project Name
+                    </div>
+                    <div class="project-completion-date">
+                        02/03/2016
+                    </div>
+                    <button class="right mdl-button mdl-button--colored mdl">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

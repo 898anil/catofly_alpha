@@ -55,7 +55,7 @@
                                 <a href="#">Quiz</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#">Projects</a>
+                                <a href="#/projects">Projects</a>
                             </li>
                             <li class="left-tabs">
                                 <a href="#">Blogs & Articles</a>
@@ -116,7 +116,7 @@
                         <!--</div>-->
                     <!--</div>-->
 
-                    <div class="dashboard-right-inside">
+                    <div class="dashboard-right-inside" ng-view>
                         <div ng-controller="studentProfileController">
                             <div class="content-holder card-panel">
                                 <div class="content-header">
@@ -178,9 +178,11 @@
     <script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/routes/studentDashboardRouting.js"></script>
     <script src="../assets/js/services/logoutService.js"></script>
     <script src="../assets/js/controllers/logoutController.js"></script>
     <script src="../assets/js/controllers/studentProfileSummaryController.js"></script>
     <script src="../assets/js/controllers/studentProfileController.js"></script>
+    <script src="../assets/js/controllers/studentProjectsController.js"></script>
     <script src="../assets/js/filters/undefinedFilter.js"></script>
 </html>
