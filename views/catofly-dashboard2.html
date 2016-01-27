@@ -82,11 +82,11 @@
                             <div class="main-content profile-summary" ng-controller="studentProfileSummaryController">
                                 <div class="block">
                                     <div class="name">Name</div>
-                                    <div class="value">{{user.name}}</div>
+                                    <div class="value">{{user.firstName + " " + user.lastName}}</div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Course Enrolled</div>
-                                    <div class="value">{{user.course}}</div>
+                                    <div class="value">{{user.course}}<span ng-if="!user.projects.length">No Course</span></div>
                                 </div>
                                 <div class="block">
                                     <div class="name">Projects Completed</div>
