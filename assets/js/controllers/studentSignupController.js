@@ -12,9 +12,14 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
             username  : $scope.student.username,
             password: $scope.student.password });
         signup.then(function(user) {
+            console.log(user.name)
+            if(user.name == "UserAlreadyExists") {
+                alert('user already exists')
+            }
 
-            location.href="student_login.html";
 
+
+            location.href = "student_login.html";
 
             console.log(user._id);
             console.log('user created');
@@ -24,16 +29,17 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
             studentDatalist._id = studentsignupId
             console.log(studentDatalist)
 
-            var studentsave = $kinvey.DataStore.save('studentUserlist',studentDatalist);
-            studentsave.then(function(model) {
+            var studentsave = $kinvey.DataStore.save('studentUserlist', studentDatalist);
+            studentsave.then(function (model) {
                 console.log(model._id)
-            }, function(err) {
+            }, function (err) {
                 console.log(err);
             });
-
+        //}
             //cns
         }, function(err) {
             console.log(err);
         });
+
     }
 }])
