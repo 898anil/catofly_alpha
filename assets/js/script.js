@@ -1,4 +1,4 @@
-var app = angular.module('catofly',['kinvey','ngRoute']);
+var app = angular.module('catofly',['kinvey']);
 var initpromise;
 app.run(['$kinvey',function($kinvey){
     initpromise = $kinvey.init({
