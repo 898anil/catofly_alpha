@@ -1,19 +1,24 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link rel="stylesheet" href="../files/demo.css">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="../assets/css/style.css" media="screen,projection"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body ng-app="catofly">
         <div class="main-container">
             <header class=" header-class">
                 <div class="logo">
-                    <img src="files/logo2.png" /><span class="logo-text">catoFly</span>
+                    <img src="../files/logo2.png" /><span class="logo-text">catoFly</span>
                 </div>
                 <div class="top-navigation">
-
+                    <div class="options">
+                        <div class="logout-contoller" ng-controller="logoutController">
+                            <button class="logout" ng-click = "logout()">Logout</button>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="main-container-inside dashboard">
@@ -117,4 +122,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/services/logoutService.js"></script>
+    <script src="../assets/js/controllers/logoutController.js"></script>
 </html>
