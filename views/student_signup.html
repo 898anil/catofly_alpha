@@ -21,7 +21,7 @@
             <div class="form tinyform whiteback middlepadded" ng-controller='studentSignupController'>
 
                 <form name="studentsignup" ng-submit="signup($event)">
-
+                    <h3 class="form-error" ng-bind="signupError"></h3>
                     <div><h3>Signup</h3></div>
                     <div class="input-field">
                         <input type="text" name="firstName" ng-model="student.firstName" id="studentFirstname" required >
