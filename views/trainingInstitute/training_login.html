@@ -33,7 +33,7 @@
                             <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
                             </div>
                         </div>
-                        <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus"></button>
+                        <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus | undefinedFilter : 'Login'"></button>
                     </form>
                     <a href="student_signup.html">Signup</a>
                     <!--<button ng-show="userloggedin" ng-click = "studentlogout()">Logout</button>-->

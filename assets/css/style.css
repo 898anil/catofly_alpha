@@ -194,6 +194,10 @@ padding-left: 15px;
 {
     width:400px;
 }
+.form.smallform
+{
+    width:650px;
+}
 .whiteback
 {
     background:white;
