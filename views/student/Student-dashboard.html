@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" media="screen,projection"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     </head>
-    <body ng-app="catofly">
+    <body ng-app="catofly" ng-controller="studentDashboardController">
         <div class="main-container">
             <header class="main-header clearfix">
                 <div class="logo left">
@@ -130,7 +130,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="../../assets/js/script.js"></script>
     <script src="../../assets/js/routes/studentDashboardRouting.js"></script>
-    <script src="../../assets/js/services/logoutService.js"></script>
     <script src="../../assets/js/controllers/studentcontroller/logoutController.js"></script>
     <script src="../../assets/js/controllers/studentcontroller/studentProfileSummaryController.js"></script>
     <script src="../../assets/js/controllers/studentcontroller/studentProfileController.js"></script>
@@ -138,8 +137,9 @@
     <script src="../../assets/js/controllers/studentcontroller/studentExercisesController.js"></script>
     <script src="../../assets/js/controllers/studentcontroller/studentQuizController.js"></script>
     <script src="../../assets/js/controllers/studentcontroller/studentMaterialController.js"></script>
-
-
     <script src="../../assets/js/filters/undefinedFilter.js"></script>
+    <script src="../../assets/js/controllers/studentcontroller/loginChecker.js"></script>
+    <script src="../../assets/js/services/isLoggedin.js"></script>
+    <script src="../../assets/js/controllers/studentcontroller/studentDashboardController.js"></script>
 
 </html>

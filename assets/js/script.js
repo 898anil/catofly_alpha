@@ -5,4 +5,7 @@ app.run(['$kinvey',function($kinvey){
         appKey    : 'kid_-1BQ6Fwa3l',
         appSecret : '6f53464a60a54ee789fa20a27b424c74'
     })
+    initpromise.then(function(){
+        console.log("initpromise is there");
+    })
 }])

@@ -1,9 +1,9 @@
 <div class="login-page signup-page">
-    <div class="form smallform whiteback middlepadded" ng-controller='studentSignupController'>
+    <div class="form tinyform whiteback middlepadded" ng-controller='studentSignupController'>
 
         <form name="studentsignup" ng-submit="signup($event)" novalidate>
-            <h3 class="form-error" ng-bind="signupError"></h3>
-            <div><h3>Signup</h3></div>
+            <h6 class="form-error" ng-bind="signupError"></h6>
+            <div><h4>Signup</h4></div>
             <div class="input-field">
                 <input type="text" name="firstName" ng-model="student.firstName" id="studentFirstname" required >
                 <div  class="form-error" ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required" ng-bind="'required'"> </div>
@@ -20,6 +20,7 @@
                 <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required " ng-bind="'required'"> </div>
                 <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.max " ng-bind="'max age is 99'"> </div>
                 <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.min " ng-bind="'min age is 1'"> </div>
+                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.number " ng-bind="'Only numbers are allowed'"> </div>
 
                 <label for="studentage">Age</label>
             </div>
