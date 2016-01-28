@@ -1,12 +1,12 @@
 app.controller('trainingLoginController',['$kinvey','$scope',function($kinvey,$scope){
-    //initpromise.then(
-    //    function(){
-    //        if($kinvey.getActiveUser() !== null)
-    //        {
-    //            location.href="training-dashboard.html";
-    //        }
-    //    }
-    //)
+    initpromise.then(
+        function(){
+            if($kinvey.getActiveUser() !== null)
+            {
+                location.href="Training-dashboard.html";
+            }
+        }
+    )
     $scope.trainingLogin = function ($event) {
         $event.preventDefault();
         console.log('form submitted');

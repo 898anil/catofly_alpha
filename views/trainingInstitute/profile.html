@@ -1,0 +1,47 @@
+<div ng-controller="trainingProfileController">
+    <div class="content-holder card-panel">
+        <div class="content-header">
+            <h3 class="page-header">
+                Profile
+            </h3>
+        </div>
+        <div class="main-content profile-summary" ng-controller="trainingProfileSummaryController">
+            <div class="block">
+                <div class="name">Institute Name</div>
+                <div class="value" ng-bind='traininginstitute.name'></div>
+            </div>
+
+            <div class="block">
+                <div class="name">Address</div>
+                <div class="value" ng-bind='traininginstitute.address'></div>
+            </div>
+
+            <div class="block">
+                <div class="name">Contact Person</div>
+                <div class="value" ng-bind='traininginstitute.contactPerson'></div>
+            </div>
+
+            <div class="block">
+                <div class="name">Phone Number</div>
+                <div class="value" ng-bind="traininginstitute.phone"></div>
+            </div>
+            <div class="block">
+                <div class="name">Email</div>
+                <div class="value" ng-bind="traininginstiute.username "></div>
+            </div>
+
+            <div class="projects cleartotal">
+                <p>Projects Summary</p>
+                <div class="project mdl-shadow--2dp clearfix mdl-cell--4-col-desktop">
+                    <div class="project-name">
+                        Project Name
+                    </div>
+                    <div class="project-completion-date">
+                        02/03/2016
+                    </div>
+                    <button class="right mdl-button mdl-button--colored mdl">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

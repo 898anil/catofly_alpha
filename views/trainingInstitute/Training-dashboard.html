@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" media="screen,projection"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-app="catofly" ng-controller="trainingDashboardController">
+        <div class="main-container">
+            <header class="main-header clearfix">
+                <div class="logo left">
+                    <img src="../../files/logo2.png" /><span class="logo-text">catoFly</span>
+                </div>
+                <div class="top-navigation mediumpadded right">
+                    <div class="options">
+                        <div class="logout-contoller" ng-controller="logoutController">
+                            <button class="logout" ng-click = "logout()">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main-container-inside dashboard">
+
+
+
+
+                <div class="dashboard-left dashboard-nav  left">
+
+                    <div class="user-info clearfix photo-tab">
+                        <div class="user-photo left">
+                            <img src="../../files/photo.png" class="circle"/>
+                        </div>
+                        <div class="user-details">
+                            <div class="user-name">
+
+                            </div>
+                            <div class="course">
+                                MEAN Stack
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-nav ">
+                        <ul>
+                            <li class="left-tabs">
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#/profile">Profile</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#/exercises">Exercise</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#/quiz">Quiz</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#/projects">Projects</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#/materials">Material</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#">Blogs & Articles</a>
+                            </li>
+                            <li class="left-tabs">
+                                <a href="#">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard-right left profile-container">
+                    <header class=" header_tag">
+                        <div >DashBoard</div>
+                        <div class="top-navigation">
+
+                        </div>
+                    </header>
+
+                    <!--<div class="preloader-wrapper big active" ng-if="!preLoader">-->
+                        <!--<div class="spinner-layer spinner-blue">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-red">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-yellow">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="spinner-layer spinner-green">-->
+                            <!--<div class="circle-clipper left">-->
+                                <!--<div class="circle"></div>-->
+                            <!--</div><div class="gap-patch">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div><div class="circle-clipper right">-->
+                            <!--<div class="circle"></div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <div class="dashboard-right-inside" ng-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/routes/trainingDashboardRouting.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/logoutController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingProfileSummaryController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingProfileController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingProjectsController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingExercisesController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingQuizController.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingMaterialController.js"></script>
+    <script src="../../assets/js/filters/undefinedFilter.js"></script>
+    <!--<script src="../../assets/js/controllers/studentcontroller/loginChecker.js"></script>-->
+    <script src="../../assets/js/services/isLoggedin.js"></script>
+    <script src="../../assets/js/controllers/trainingcontroller/trainingDashboardController.js"></script>
+
+</html>

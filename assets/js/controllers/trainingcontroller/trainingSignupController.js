@@ -15,8 +15,12 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
             var trainingsignupId = user._id;
             var trainingDatalist = $scope.traininginstitute;
             trainingDatalist._id = trainingsignupId;
-            console.log(trainingDatalist)
-            var trainingSave = $kinvey.DataStore.save('trainingInstitutelist', trainingDatalist);
+            console.log(trainingDatalist);
+                location.href="Training-dashboard.html";
+
+
+
+                var trainingSave = $kinvey.DataStore.save('trainingInstitutelist', trainingDatalist);
             trainingSave.then(function (model) {
                 console.log(model._id)
             }, function (err) {
