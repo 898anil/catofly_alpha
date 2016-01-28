@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89a8c759-7331-44f6-9e60-876f90a813e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controllers/studentcontroller/studentSignupController.js" afterPath="$PROJECT_DIR$/assets/js/controllers/studentcontroller/studentSignupController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingProfileSummaryController.js" afterPath="$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingProfileSummaryController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingSignupController.js" afterPath="$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingSignupController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/trainingInstitute/training_account.html" afterPath="$PROJECT_DIR$/views/trainingInstitute/training_account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/trainingInstitute/training_signup.html" afterPath="$PROJECT_DIR$/views/trainingInstitute/training_signup.html" />
     </list>
     <ignored path="dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +36,8 @@
       <file leaf-file-name="trainingSignupController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingSignupController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3504673">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.5373832">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -731,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453987241041</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="institute changes">
+      <created>1453988739400</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1453988739400</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1140,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/trainingInstitute/training_account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/student/student_signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.375">
@@ -1180,10 +1173,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/trainingInstitute/training_account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/controllers/trainingcontroller/trainingSignupController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3504673">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5373832">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
