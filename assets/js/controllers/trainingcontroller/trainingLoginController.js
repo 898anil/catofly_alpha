@@ -15,7 +15,7 @@ app.controller('trainingLoginController',['$kinvey','$scope',function($kinvey,$s
         var login = Kinvey.User.login($scope.traininginstitute.username, $scope.traininginstitute.password);
         login.then(function (user) {
             console.log('user logged in' + user._id);
-            location.href = "training-dashboard.html";
+            location.href = "Training-dashboard.html";
         }, function (err) {
             console.log('error occured');
             $scope.loginError = "err.message";
