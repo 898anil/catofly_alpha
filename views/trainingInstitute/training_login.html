@@ -4,12 +4,12 @@
         <h4 ng-bind="loginError"></h4>
         <form name="loginForm" ng-submit="trainingLogin($event)" novalidate>
             <div class="username-block input-field">
-                <input type="text" name="username" ng-model="traininginstitute.username" placeholder="Username" required>
+                <input type="text" name="username" ng-model="institute.username" placeholder="Username" required>
                 <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Username Required'">
                 </div>
             </div>
             <div class="password-block input-field">
-                <input type="password" name="password" ng-model="traininginstitute.password" placeholder="Password" required>
+                <input type="password" name="password" ng-model="institute.password" placeholder="Password" required>
                 <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
                 </div>
             </div>

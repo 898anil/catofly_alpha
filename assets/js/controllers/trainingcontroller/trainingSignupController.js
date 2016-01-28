@@ -6,14 +6,14 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
 
         console.log('institute signed up');
         var signup = $kinvey.User.signup({
-            username  : $scope.traininginstiute.username,
-            password: $scope.traininginstiute.password });
+            username  : $scope.institute.username,
+            password: $scope.institute.password });
 
             signup.then(function(user) {
             console.log(user._id);
             console.log('user created');
             var trainingsignupId = user._id;
-            var trainingDatalist = $scope.traininginstitute;
+            var trainingDatalist = $scope.institute;
             trainingDatalist._id = trainingsignupId;
             console.log(trainingDatalist);
                 location.href="Training-dashboard.html";
