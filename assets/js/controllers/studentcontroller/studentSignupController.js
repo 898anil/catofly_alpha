@@ -11,6 +11,7 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
 
             username  : $scope.student.username,
             password: $scope.student.password });
+
         signup.then(function(user) {
             console.log(user.name)
             location.href = "Student-dashboard.html";

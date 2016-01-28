@@ -24,18 +24,18 @@
                     <h3 class="form-error" ng-bind="signupError"></h3>
                     <div><h3>Signup</h3></div>
                     <div class="input-field">
-                        <input type="text" name="insituteName" ng-model="traininginstitute.name" id="traininginstitutetname" required >
+                        <input type="text" name="insituteName" ng-model="institute.name" id="traininginstitutetname" required >
                         <div  class="form-error" ng-show="trainingsignup.instituteName.$touched && trainingsignup.instituteName.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstitutetname">Institute Name</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" name="instituteAddress" ng-model="traininginstitute.address" id="traininginstituteaddress" required >
+                        <input type="text" name="instituteAddress" ng-model="institute.address" id="traininginstituteaddress" required >
                         <div  class="form-error" ng-show="trainingsignup.instituteAddress.$touched && trainingsignup.instituteAddress.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstituteaddress">Address</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="contactpersonName" ng-model="traininginstitute.contactPerson" id="traininginstituteperson" required >
+                        <input type="text" name="contactpersonName" ng-model="institute.contactPerson" id="traininginstituteperson" required >
                         <div  class="form-error" ng-show="trainingsignup.contactpersonName.$touched && trainingsignup.contactpersonName.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstituteperson">Contact Person</label>
                     </div>
@@ -43,21 +43,21 @@
 
 
                     <div class="input-field">
-                        <input type="number" id="traininginstitutephone" ng-model="traininginstitute.phone" ng-maxlength="10" name="phone"  required>
+                        <input type="number" id="traininginstitutephone" ng-model="institute.phone" ng-maxlength="10" name="phone"  required>
                         <div  class="form-error" ng-show="trainingsignup.phone.$touched && trainingsignup.phone.$error.required " ng-bind="'required'"> </div>
                         <div  class="form-error" ng-show="trainingsignup.phone.$touched && trainingsignup.phone.$error.maxlength " ng-bind="'Check Your PhoneNumber'"> </div>
 
                         <label for="traininginstitutephone">Phone Number</label>
                     </div>
                     <div class="input-field">
-                        <input type="email" id="traininigEmail"  ng-model="traininginstiute.username "  name="traininginstituteemail" required>
+                        <input type="email" id="traininigEmail"  ng-model="institute.username"  name="traininginstituteEmail" required>
                         <div  class="form-error" ng-show="trainingsignup.traininginstituteemail.$touched && trainingsignup.traininginstituteemail.$error.email" ng-bind="'valid email'"></div>
                         <div  class="form-error" ng-show="trainingsignup.traininginstituteemail.$touched && trainingsignup.traininginstituteemail.$error.required" ng-bind="'required email'" ></div>
 
                         <label for="traininigEmail" >Email</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="password" ng-model="traininginstitute.password" id="traininginstitutepassword" required >
+                        <input type="password" name="password" ng-model="institute.password" id="traininginstitutepassword" required >
                         <div  class="form-error" ng-show="trainingsignup.password.$touched && trainingsignup.password.$error.required" ng-bind="'required password'"></div>
                         <label for="traininginstitutepassword">Password</label>
                     </div>

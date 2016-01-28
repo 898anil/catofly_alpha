@@ -12,9 +12,12 @@ app.controller('trainingProfileSummaryController',['$kinvey','$scope','$rootScop
         }
         console.log(_id);
         var userdata = $kinvey.DataStore.get('trainingInstitutelist',_id);
+        console.log('data requested');
         userdata.then(function(insituteData){
             $scope.institute = insituteData;
             console.log(insituteData)
+        },function(err){
+            console.log(err);
         })
     })
 }])
