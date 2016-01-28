@@ -4,7 +4,7 @@
 app.controller('trainingProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
     initpromise.then(function(){
         if($kinvey.getActiveUser()==null) {
-            //location.href = "student_account.html";
+            location.href = "training_account.html";
          }
         else
         {
@@ -12,6 +12,7 @@ app.controller('trainingProfileSummaryController',['$kinvey','$scope','$rootScop
         }
 
         var userdata = $kinvey.DataStore.get('trainingInstitutelist',_id);
+
         userdata.then(function(userData){
             $scope.traininginstitute = userData;
 
