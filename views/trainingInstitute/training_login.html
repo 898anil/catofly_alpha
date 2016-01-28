@@ -1,55 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Student Login</title>
-
-    <meta charset="utf8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <link rel="stylesheet" href="../../files/demo.css">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" media="screen,projection"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-</head>
-<body ng-app="catofly">
-
-    <header>
-
-    </header>
-    <div class="main-container">
-        <br><br>
-        <div class="main-container-inside">
-            <div class="login-page">
-                <div class="form tinyform whiteback middlepadded" ng-controller='trainingLoginController'>
-                    <h3 class="form-header">Login</h3>
-                    <h4 ng-bind="loginError"></h4>
-                    <form name="loginForm" ng-submit="trainingLogin($event)" novalidate>
-                        <div class="username-block input-field">
-                            <input type="text" name="username" ng-model="training.username" placeholder="Username" required>
-                            <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Username Required'">
-                            </div>
-                        </div>
-                        <div class="password-block input-field">
-                            <input type="password" name="password" ng-model="training.password" placeholder="Password" required>
-                            <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
-                            </div>
-                        </div>
-                        <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus | undefinedFilter : 'Login'"></button>
-                    </form>
-                    <a href="student_signup.html">Signup</a>
-                    <!--<button ng-show="userloggedin" ng-click = "studentlogout()">Logout</button>-->
+<div class="login-page">
+    <div class="form tinyform whiteback middlepadded" ng-controller='trainingLoginController'>
+        <h3 class="form-header">Login</h3>
+        <h4 ng-bind="loginError"></h4>
+        <form name="loginForm" ng-submit="trainingLogin($event)" novalidate>
+            <div class="username-block input-field">
+                <input type="text" name="username" ng-model="traininginstitute.username" placeholder="Username" required>
+                <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Username Required'">
                 </div>
             </div>
-        </div>
+            <div class="password-block input-field">
+                <input type="password" name="password" ng-model="traininginstitute.password" placeholder="Password" required>
+                <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
+                </div>
+            </div>
+            <button type="submit" ng-disabled="!loginForm.$valid" ng-bind="loginStatus | undefinedFilter:'Login'"></button>
+        </form>
+        <!--<a href="#/signup">Signup</a>-->
+        <!--<button ng-show="userloggedin" ng-click = "studentlogout()">Logout</button>-->
     </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-<script src="//da189i1jfloii.cloudfront.net/js/kinvey-angular-1.4.4.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
-<script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/controllers/studentcontroller/studentLoginController.js"></script>
-</body>
-</html>
-
+</div>
