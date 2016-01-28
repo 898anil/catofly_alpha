@@ -1,7 +1,7 @@
 <div class="login-page">
     <div class="form tinyform whiteback middlepadded" ng-controller='studentLoginController'>
-        <h3 class="form-header">Login</h3>
-        <h4 ng-bind="loginError"></h4>
+        <h4 class="form-header">Login</h4>
+        <h4 class="form-error" ng-bind="loginError"></h4>
         <form name="loginForm" ng-submit="studentLogin($event)" novalidate>
             <div class="username-block input-field">
                 <input type="text" name="username" ng-model="student.username" placeholder="Username" required>

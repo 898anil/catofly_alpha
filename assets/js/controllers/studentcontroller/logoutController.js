@@ -6,7 +6,7 @@ app.controller('logoutController',['$scope','$kinvey',function($scope,$kinvey){
         $scope.logout = function() {
             var logout = $kinvey.User.logout();
             logout.then(function () {
-                location.href = "student_login.html";
+                location.href = "student_account.html";
             })
         }
     })

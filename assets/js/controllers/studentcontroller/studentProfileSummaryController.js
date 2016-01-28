@@ -4,7 +4,7 @@
 app.controller('studentProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
     initpromise.then(function(){
         if($kinvey.getActiveUser()==null) {
-            location.href = "student_login.html";
+            location.href = "student_account.html";
          }
         else
         {
