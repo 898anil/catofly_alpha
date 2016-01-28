@@ -24,18 +24,18 @@
                     <h3 class="form-error" ng-bind="signupError"></h3>
                     <div><h3>Signup</h3></div>
                     <div class="input-field">
-                        <input type="text" name="insituteName" ng-model="traininginstitute.Name" id="traininginstitutetname" required >
+                        <input type="text" name="insituteName" ng-model="traininginstitute.name" id="traininginstitutetname" required >
                         <div  class="form-error" ng-show="trainingsignup.instituteName.$touched && trainingsignup.instituteName.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstitutetname">Institute Name</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" name="instituteAddress" ng-model="traininginstitute.Address" id="traininginstituteaddress" required >
+                        <input type="text" name="instituteAddress" ng-model="traininginstitute.address" id="traininginstituteaddress" required >
                         <div  class="form-error" ng-show="trainingsignup.instituteAddress.$touched && trainingsignup.instituteAddress.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstituteaddress">Address</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="contactpersonName" ng-model="traininginstitute.contactperson" id="traininginstituteperson" required >
+                        <input type="text" name="contactpersonName" ng-model="traininginstitute.contactPerson" id="traininginstituteperson" required >
                         <div  class="form-error" ng-show="trainingsignup.contactpersonName.$touched && trainingsignup.contactpersonName.$error.required" ng-bind="'required'"> </div>
                         <label for="traininginstituteperson">Contact Person</label>
                     </div>

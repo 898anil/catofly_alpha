@@ -10,7 +10,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'training_login.html',
             controller: 'trainingLoginController'
         })
-
+        .when('/', {
+            templateUrl: 'training_login.html',
+            controller: 'trainingLoginController'
+        })
         .otherwise({
             redirectTo:'/'
         })
