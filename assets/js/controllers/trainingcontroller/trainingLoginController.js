@@ -29,7 +29,7 @@ app.controller('trainingLoginController',['$kinvey','$scope',function($kinvey,$s
             console.log('error occured');
             $scope.loginError = err.message;
             $scope.loginStatus = 'Login';
-        })
+        })//df
 
     }
 }]);
