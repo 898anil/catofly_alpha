@@ -5,7 +5,7 @@ app.controller('trainingDashboardController',["isLoggedIn",function(isLoggedIn){
     initpromise.then(function(){
         if(!Kinvey.getActiveUser())
         {
-            location.href="training_account.html";
+            location.href="startup_account.html";
         }
     })
 }])
