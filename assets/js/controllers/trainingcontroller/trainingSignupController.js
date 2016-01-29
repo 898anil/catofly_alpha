@@ -20,7 +20,7 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
                 var trainingSave = $kinvey.DataStore.save('trainingInstitutelist', trainingDatalist);
             trainingSave.then(function (model) {
                 console.log(model._id);
-                location.href="Startup-dashboard.html";
+                location.href="training-dashboard.html";
             }, function (err) {
                 console.log(err);
             });
