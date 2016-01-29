@@ -1,15 +1,15 @@
 <div class="login-page">
-    <div class="form tinyform whiteback middlepadded" ng-controller='trainingLoginController'>
+    <div class="form tinyform whiteback middlepadded" ng-controller='startupLoginController'>
         <h3 class="form-header">Login</h3>
         <h4 ng-bind="loginError"></h4>
-        <form name="loginForm" ng-submit="trainingLogin($event)" novalidate>
+        <form name="loginForm" ng-submit="startupLogin($event)" novalidate>
             <div class="username-block input-field">
-                <input type="text" name="username" ng-model="institute.username" placeholder="Username" required>
+                <input type="text" name="username" ng-model="startup.username" placeholder="Username" required>
                 <div class="form-error" ng-show="loginForm.username.$error.required && loginForm.username.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Username Required'">
                 </div>
             </div>
             <div class="password-block input-field">
-                <input type="password" name="password" ng-model="institute.password" placeholder="Password" required>
+                <input type="password" name="password" ng-model="startup.password" placeholder="Password" required>
                 <div class="form-error" ng-show="loginForm.password.$error.required && loginForm.password.$touched || loginForm.$submitted && !loginForm.$valid" ng-bind="'Password Required'">
                 </div>
             </div>

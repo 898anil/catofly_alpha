@@ -6,45 +6,45 @@
             <div><h4>Signup</h4></div>
             <div class="input-field">
                 <input type="text" name="firstName" ng-model="student.firstName" id="studentFirstname" required >
-                <div  class="form-error" ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required" ng-bind="'required'"> </div>
+                <div  class="form-error" ng-show="studentsignup.firstName.$touched && studentsignup.firstName.$error.required || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'required'"> </div>
                 <label for="studentFirstname">First Name</label>
             </div>
             <div class="input-field">
                 <input type="text" name="lastName" ng-model="student.lastName" id="studentLastname"  required >
-                <div  class="form-error" ng-show="studentsignup.lastName.$touched && studentsignup.lastName.$error.required" ng-bind="'required'"></div>
+                <div  class="form-error" ng-show="studentsignup.lastName.$touched && studentsignup.lastName.$error.required || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'required'"></div>
                 <label for="studentLastname">Last Name</label>
             </div>
 
             <div class="input-field">
                 <input type="number" name="age" ng-model="student.age" min="1" max="100" id="studentage"  required >
-                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required " ng-bind="'required'"> </div>
-                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.max " ng-bind="'max age is 99'"> </div>
-                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.min " ng-bind="'min age is 1'"> </div>
-                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.number " ng-bind="'Only numbers are allowed'"> </div>
+                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.required || studentsignup.$submitted && !studentsignup.$valid " ng-bind="'required'"> </div>
+                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.max || studentsignup.$submitted && !studentsignup.$valid " ng-bind="'max age is 99'"> </div>
+                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.min|| studentsignup.$submitted && !studentsignup.$valid " ng-bind="'min age is 1'"> </div>
+                <div  class="form-error" ng-show="studentsignup.age.$touched && studentsignup.age.$error.number || studentsignup.$submitted && !studentsignup.$valid " ng-bind="'Only numbers are allowed'"> </div>
 
                 <label for="studentage">Age</label>
             </div>
             <div class="input-field">
-                <input type="number" id="studentphone" ng-model="student.phone" ng-maxlength="10" name="phone"  required>
-                <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required " ng-bind="'required'"> </div>
-                <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.maxlength " ng-bind="'Check Your PhoneNumber'"> </div>
+                <input type="number" id="studentphone" ng-model="student.phone" ng-minlength="10" ng-maxlength="10" name="phone"  required>
+                <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.required || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'required'"> </div>
+                <div  class="form-error" ng-show="studentsignup.phone.$touched && studentsignup.phone.$error.maxlength||studentsignup.phone.$error.minlength  || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'Check Your PhoneNumber'"> </div>
 
                 <label for="studentphone">Phone Number</label>
             </div>
             <div class="input-field">
                 <input type="email" id="studentEmail"  ng-model="student.username "  name="studentemail" required>
-                <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.email" ng-bind="'valid email'"></div>
-                <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.required" ng-bind="'required email'" ></div>
+                <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.email || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'valid email'"></div>
+                <div  class="form-error" ng-show="studentsignup.studentemail.$touched && studentsignup.studentemail.$error.required || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'required email'" ></div>
 
                 <label for="studentEmail" >Email</label>
             </div>
             <div class="input-field">
                 <input type="password" name="password" ng-model="student.password" id="studentpassword" required >
-                <div  class="form-error" ng-show="studentsignup.password.$touched && studentsignup.password.$error.required" ng-bind="'required password'"></div>
+                <div  class="form-error" ng-show="studentsignup.password.$touched && studentsignup.password.$error.required || studentsignup.$submitted && !studentsignup.$valid" ng-bind="'required password'"></div>
                 <label for="studentpassword">Password</label>
             </div>
 
-            <button type="submit" value="Signup">Signup</button>
+            <button type="submit" ng-disabled="!studentsignup.$valid" value="Signup">Signup</button>
         </form>
         <a href="#/signin">Login</a>
         <!--<a href="/student_signup.html">Signup here</a>-->

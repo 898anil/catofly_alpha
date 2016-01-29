@@ -1,4 +1,4 @@
 
-app.controller('trainingProfileController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('startupProfileController',['$kinvey','$scope',function($kinvey,$scope){
 
 }])

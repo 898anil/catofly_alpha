@@ -1,49 +1,61 @@
 <div class="login-page signup-page">
-    <div class="form tinyform whiteback middlepadded" ng-controller='trainingSignupController'>
+    <div class="form tinyform whiteback middlepadded" ng-controller='startupSignupController'>
 
-        <form name="trainingsignup" ng-submit="signup($event)">
+        <form name="startupsignup" ng-submit="signup($event)" novalidate>
             <h3 class="form-error" ng-bind="signupError"></h3>
             <div><h3>Signup</h3></div>
             <div class="input-field">
-                <input type="text" name="insituteName" ng-model="institute.name" id="traininginstitutetname" required >
-                <div  class="form-error" ng-show="trainingsignup.instituteName.$touched && trainingsignup.instituteName.$error.required" ng-bind="'required'"> </div>
-                <label for="traininginstitutetname">Institute Name</label>
+                <input type="text" name="startupName" ng-model="startup.name" id="startuptname" required >
+                <div  class="form-error" ng-show="startupsignup.startupName.$touched && startupsignup.startupName.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <label for="startuptname">startup Name</label>
             </div>
             <div class="input-field">
-                <input type="text" name="instituteAddress" ng-model="institute.address" id="traininginstituteaddress" required >
-                <div  class="form-error" ng-show="trainingsignup.instituteAddress.$touched && trainingsignup.instituteAddress.$error.required" ng-bind="'required'"> </div>
-                <label for="traininginstituteaddress">Address</label>
+                <input type="text" name="startupAddress" ng-model="startup.address" id="startupaddress" required >
+                <div  class="form-error" ng-show="startupsignup.startupAddress.$touched && startupsignup.startupAddress.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <label for="startupaddress">Address</label>
             </div>
-
-            <div class="input-field">
-                <input type="text" name="contactpersonName" ng-model="institute.contactPerson" id="traininginstituteperson" required >
-                <div  class="form-error" ng-show="trainingsignup.contactpersonName.$touched && trainingsignup.contactpersonName.$error.required" ng-bind="'required'"> </div>
-                <label for="traininginstituteperson">Contact Person</label>
-            </div>
-
 
 
             <div class="input-field">
-                <input type="number" id="traininginstitutephone" ng-model="institute.phone" ng-maxlength="10" name="phone"  required>
-                <div  class="form-error" ng-show="trainingsignup.phone.$touched && trainingsignup.phone.$error.required " ng-bind="'required'"> </div>
-                <div  class="form-error" ng-show="trainingsignup.phone.$touched && trainingsignup.phone.$error.maxlength " ng-bind="'Check Your PhoneNumber'"> </div>
+                <input type="text" name="startupurl" ng-model="startup.url" id="startupurl" required >
+                <div  class="form-error" ng-show="startupsignup.startupurl.$touched && startupsignup.startupurl.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <label for="startupurl">Startup Field</label>
+            </div>
 
-                <label for="traininginstitutephone">Phone Number</label>
+            <div class="input-field">
+                <input type="text" name="startupfield" ng-model="startup.field" id="startupfield" required >
+                <div  class="form-error" ng-show="startupsignup.startupfield.$touched && startupsignup.startupfield.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <label for="startupfield">Url</label>
+            </div>
+
+
+            <div class="input-field">
+                <input type="text" name="contactpersonName" ng-model="startup.contactPerson" id="startupperson" required >
+                <div  class="form-error" ng-show="startupsignup.contactpersonName.$touched && startupsignup.contactpersonName.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <label for="startupperson">Contact Person</label>
             </div>
             <div class="input-field">
-                <input type="email" id="traininigEmail"  ng-model="institute.username"  name="traininginstituteEmail" required>
-                <div  class="form-error" ng-show="trainingsignup.traininginstituteemail.$touched && trainingsignup.traininginstituteemail.$error.email" ng-bind="'valid email'"></div>
-                <div  class="form-error" ng-show="trainingsignup.traininginstituteemail.$touched && trainingsignup.traininginstituteemail.$error.required" ng-bind="'required email'" ></div>
+                <input type="number" id="startupphone" ng-model="startup.phone" ng-minlength="10" ng-maxlength="10" name="phone"  required>
+                <div  class="form-error" ng-show="startupsignup.phone.$touched && startupsignup.phone.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required'"> </div>
+                <div  class="form-error" ng-show="startupsignup.phone.$touched && startupsignup.phone.$error.maxlength||startupsignup.phone.$error.minlength || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'Check Your PhoneNumber'"> </div>
 
-                <label for="traininigEmail" >Email</label>
+                <label for="startupphone">Phone Number</label>
+            </div>
+
+            <div class="input-field">
+                <input type="email" id="startupEmail"  ng-model="startup.username"  name="startupEmail" required>
+                <div  class="form-error" ng-show="startupsignup.startupemail.$touched && startupsignup.startupemail.$error.email || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'valid email'"></div>
+                <div  class="form-error" ng-show="startupsignup.startupemail.$touched && startupsignup.startupemail.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required email'" ></div>
+
+                <label for="startupEmail" >Email</label>
             </div>
             <div class="input-field">
-                <input type="password" name="password" ng-model="institute.password" id="traininginstitutepassword" required >
-                <div  class="form-error" ng-show="trainingsignup.password.$touched && trainingsignup.password.$error.required" ng-bind="'required password'"></div>
-                <label for="traininginstitutepassword">Password</label>
+                <input type="password" name="password" ng-model="startup.password" id="startuppassword" required >
+                <div  class="form-error" ng-show="startupsignup.password.$touched && startupsignup.password.$error.required || startupsignup.$submitted && !startupsignup.$valid" ng-bind="'required password'"></div>
+                <label for="startuppassword">Password</label>
             </div>
 
-            <button type="submit" value="Signup">Signup</button>
+            <button type="submit"  ng-disabled="!startupsignup.$valid" value="Signup">Signup</button>
         </form>
         <!--<a href="/student_signup.html">Signup here</a>-->
     </div>

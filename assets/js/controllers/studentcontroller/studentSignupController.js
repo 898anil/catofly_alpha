@@ -1,6 +1,5 @@
-var studentsignupId ;
 app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$scope){
-    console.log('studentsignedup');
+    console.log('studentsignup page ');
     $scope.signup = function($event){
         $event.preventDefault();
         console.log($scope.student);
@@ -16,22 +15,25 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
 
         signup.then(function(user) {
             console.log(user.name)
-            location.href = "Student-dashboard.html";
             console.log(user._id);
             console.log('user created');
-            studentsignupId = user._id;
-            var studentDatalist = {};
-            studentDatalist = $scope.student;
-            studentDatalist._id = studentsignupId
-            console.log(studentDatalist)
+
+          var  studentDatalist = $scope.student;
+            studentDatalist._id = user._id;
+            console.log(studentDatalist);
+
 
             var studentsave = $kinvey.DataStore.save('studentUserlist', studentDatalist);
             studentsave.then(function (model) {
                 console.log(model._id)
+                location.href = "Student-dashboard.html";
+
             }, function (err) {
                 console.log(err);
             });
-        //}
+
+
+            //}
             //cns
         }, function(err) {
             console.log(err);

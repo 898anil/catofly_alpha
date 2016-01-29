@@ -12,6 +12,7 @@ app.controller('startupSignupController',['$kinvey','$scope',function($kinvey,$s
         signup.then(function(user) {
             console.log(user._id);
             console.log('startup created');
+            var startupDatalist = $scope.startup;
             startupDatalist._id = user._id;
                 var startupSave = $kinvey.DataStore.save('startuplist', startupDatalist);
             startupSave.then(function (model) {
@@ -27,4 +28,4 @@ app.controller('startupSignupController',['$kinvey','$scope',function($kinvey,$s
             }
         });
     }
-}])
+}]);

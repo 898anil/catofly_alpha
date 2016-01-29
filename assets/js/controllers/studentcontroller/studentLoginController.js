@@ -6,7 +6,7 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
                 location.href="Student-dashboard.html";
             }
         }
-    )
+    );
         $scope.studentLogin = function ($event) {
             $event.preventDefault();
             console.log('form submitted');

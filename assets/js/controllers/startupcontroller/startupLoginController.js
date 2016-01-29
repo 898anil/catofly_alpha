@@ -7,7 +7,7 @@ app.controller('startupLoginController',['$kinvey','$scope',function($kinvey,$sc
             }
         }
     )
-    $scope.trainingLogin = function ($event) {
+    $scope.startupLogin = function ($event) {
         $event.preventDefault();
         console.log('form submitted');
         console.log($scope.startup);
