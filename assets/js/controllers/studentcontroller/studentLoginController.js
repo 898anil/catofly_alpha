@@ -14,11 +14,19 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
             $scope.loginStatus = 'Loging In';
             var login = Kinvey.User.login($scope.student.username, $scope.student.password);
             login.then(function (user) {
-                console.log('user logged in' + user._id);
-                location.href = "Student-dashboard.html";
+                if(user.type == 'student') {
+                    console.log('user logged in' + user._id);
+                    location.href = "Student-dashboard.html";
+                }
+                else
+                {
+                    $kinvey.User.logout({force:true});
+                    $scope.loginStatus = 'Login';
+                    $scope.loginError = "Invalid Credentials";
+                }
             }, function (err) {
                 console.log('error occured');
-                $scope.loginError = "err.message";
+                $scope.loginError = err.message;
                 $scope.loginStatus = 'Login';
             })
 

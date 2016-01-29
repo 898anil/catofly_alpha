@@ -10,12 +10,13 @@ app.controller('studentSignupController',['$kinvey','$scope',function($kinvey,$s
         var signup = $kinvey.User.signup({
 
             username  : $scope.student.username,
-            password: $scope.student.password });
+            password: $scope.student.password,
+            type: 'student'
+        });
 
         signup.then(function(user) {
             console.log(user.name)
             location.href = "Student-dashboard.html";
-
             console.log(user._id);
             console.log('user created');
             studentsignupId = user._id;

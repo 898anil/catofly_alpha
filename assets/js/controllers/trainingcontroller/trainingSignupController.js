@@ -5,7 +5,9 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
         console.log($scope.institute.username + " : " + $scope.institute.password)
         var signup = $kinvey.User.signup({
             username  : $scope.institute.username,
-            password: $scope.institute.password });
+            password: $scope.institute.password,
+            type:"institute"
+        });
 
         signup.then(function(user) {
             console.log(user._id);
@@ -14,10 +16,11 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
             var trainingDatalist = $scope.institute;
             trainingDatalist._id = trainingsignupId;
             console.log(trainingDatalist);
-                location.href="Training-dashboard.html";
+
                 var trainingSave = $kinvey.DataStore.save('trainingInstitutelist', trainingDatalist);
             trainingSave.then(function (model) {
-                console.log(model._id)
+                console.log(model._id);
+                location.href="Training-dashboard.html";
             }, function (err) {
                 console.log(err);
             });
