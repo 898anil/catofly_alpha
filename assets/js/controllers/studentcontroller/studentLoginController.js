@@ -12,7 +12,7 @@ app.controller('studentLoginController',['$kinvey','$scope',function($kinvey,$sc
             console.log('form submitted');
             console.log($scope.student);
             $scope.loginStatus = 'Loging In';
-            var login = Kinvey.User.login($scope.student.username, $scope.student.password);
+            var login = Kinvey.User.login($scope.student.username, $scope.student.password );
             login.then(function (user) {
                 if(user.type == 'student') {
                     console.log('user logged in' + user._id);
