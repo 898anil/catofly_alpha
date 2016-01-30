@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{heading}}</title>
+<div class="projects" ng-controller="studentExercisesController">
+    <div class="content-holder card-panel">
+        <div class="content-header">
+            <h3 class="page-header">
+                {{heading}}
+            </h3>
+        </div>
 
-</head>
-<body>
-<p>{{heading}}</p>
-</body>
-</html>
+        <div class="block">
+            <div class="name">Total Exercises </div>
+            <div class="value" ng-bind="user.exercises.length | undefinedFilter:10"></div>
+        </div>
+        <div class="block">
+            <div class="name">Exercises Completed</div>
+            <div class="value" ng-bind="user.exercises.length | undefinedFilter:0"></div>
+        </div>
+        <div class="projects cleartotal">
+            <p>Exercises Summary</p>
+            <div class="project mdl-shadow--2dp clearfix mdl-cell--4-col-desktop">
+                <div class="project-name">
+                    Exercise Name
+                </div>
+                <div class="project-completion-date">{{date}}
+                </div>
+
+                <button class="right mdl-button mdl-button--colored mdl">View</button>
+            </div>
+        </div>
+
+        </div>.
+</div>

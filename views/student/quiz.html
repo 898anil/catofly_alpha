@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>{{heading}}</p>
-</body>
-</html>
+<div class="projects" ng-controller="studentQuizController">
+
+    <div class="content-holder card-panel">
+        <div class="content-header">
+            <h3 class="page-header">
+                {{heading}}
+            </h3>
+        </div>
+
+        <div class="block">
+            <div class="name">Total Quizes </div>
+            <div class="value" ng-bind="user.projects.length | undefinedFilter:10"></div>
+        </div>
+        <div class="block">
+            <div class="name">Quizes Completed</div>
+            <div class="value" ng-bind="user.projects.length | undefinedFilter:0"></div>
+        </div>
+        <div class="projects cleartotal">
+            <p>Quizes Summary</p>
+            <div class="project mdl-shadow--2dp clearfix mdl-cell--4-col-desktop">
+                <div class="project-name">
+                    Projects Name
+                </div>
+                <div class="project-completion-date">{{date}}
+                </div>
+
+                <button class="right mdl-button mdl-button--colored mdl">View</button>
+            </div>
+        </div>
+
+    </div>.
+</div>

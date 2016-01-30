@@ -3,27 +3,27 @@
  */
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/projects', {
-        templateUrl: 'StudentManagement.html',
+        templateUrl: 'projects.html',
         controller: 'studentProjectsController'
     })
         .when('/', {
-        templateUrl: 'InstituteProfile.html',
+        templateUrl: 'Profile.html',
         controller: 'studentProfileController'
     })
         .when('/profile', {
-            templateUrl: 'InstituteProfile.html',
+            templateUrl: 'Profile.html',
             controller: 'studentProfileController'
         })
         .when('/exercises',{
-            templateUrl: 'CourseManagement.html',
+            templateUrl: 'exercises.html',
             controller: 'studentExercisesController'
         })
         .when('/quiz',{
-            templateUrl: 'StartupManagement.html',
+            templateUrl: 'quiz.html',
             controller: 'studentQuizController'
         })
         .when('/materials',{
-            templateUrl: 'MaterialManagement.html',
+            templateUrl: 'Material.html',
             controller: 'studentMaterialController'
         })
 }])

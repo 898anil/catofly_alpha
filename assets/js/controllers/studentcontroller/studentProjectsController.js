@@ -3,5 +3,6 @@
  */
 app.controller('studentProjectsController',['$kinvey','$scope',function($kinvey,$scope){
     //console.log('working');
-    $scope.heading = "its the projects page";
+    $scope.heading = "Projects";
+    $scope.date = Date();
 }])
