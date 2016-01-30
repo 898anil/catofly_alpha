@@ -1,10 +1,10 @@
 /**
  * Created by jellyglass on 27/1/16.
  */
-app.controller('trainingProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
+app.controller('InstituteProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
     initpromise.then(function(){
         if($kinvey.getActiveUser()==null) {
-            location.href = "student_account.html";
+            location.href = "Training_account.html";
          }
         else
         {

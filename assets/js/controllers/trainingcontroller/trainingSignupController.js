@@ -1,4 +1,4 @@
-app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('TrainingSignupController',['$kinvey','$scope',function($kinvey,$scope){
     $scope.signup = function($event){
         $event.preventDefault();
         console.log('institute signed up');
@@ -20,7 +20,7 @@ app.controller('trainingSignupController',['$kinvey','$scope',function($kinvey,$
                 var trainingSave = $kinvey.DataStore.save('trainingInstitutelist', trainingDatalist);
             trainingSave.then(function (model) {
                 console.log(model._id);
-                location.href="training-dashboard.html";
+                location.href="Training-dashboard.html";
             }, function (err) {
                 console.log(err);
             });

@@ -1,9 +1,9 @@
-app.controller('trainingLoginController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('TrainingLoginController',['$kinvey','$scope',function($kinvey,$scope){
     initpromise.then(
         function(){
             if($kinvey.getActiveUser() !== null)
             {
-                location.href="training-dashboard.html";
+                location.href="Training-dashboard.html";
             }
         }
     )
@@ -16,7 +16,7 @@ app.controller('trainingLoginController',['$kinvey','$scope',function($kinvey,$s
         login.then(function (user) {
             if(user.type == "institute") {
                 console.log('user logged in' + user._id);
-                location.href = "training-dashboard.html";
+                location.href = "Training-dashboard.html";
             }
             else
             {

@@ -3,16 +3,16 @@
  */
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/signup', {
-            templateUrl: 'training_signup.html',
-            controller: 'trainingSignupController'
+            templateUrl: 'Training_signup.html',
+            controller: 'TrainingSignupController'
         })
         .when('/signin', {
-            templateUrl: 'training_login.html',
-            controller: 'trainingLoginController'
+            templateUrl: 'Training_login.html',
+            controller: 'TrainingLoginController'
         })
         .when('/', {
-            templateUrl: 'training_login.html',
-            controller: 'trainingLoginController'
+            templateUrl: 'Training_login.html',
+            controller: 'TrainingLoginController'
         })
         .otherwise({
             redirectTo:'/'

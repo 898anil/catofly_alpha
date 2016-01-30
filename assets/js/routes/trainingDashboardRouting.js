@@ -2,17 +2,14 @@
  * Created by jellyglass on 27/1/16.
  */
 app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/projects', {
-        templateUrl: 'StudentManagement.html',
-        controller: 'trainingProjectsController'
-    })
+    $routeProvider
         .when('/', {
-        templateUrl: 'profile.html',
-        controller: 'trainingProfileController'
+        templateUrl: 'InstituteProfile.html',
+        controller: 'InstituteProfileController'
     })
-        .when('/profile', {
-            templateUrl: 'profile.html',
-            controller: 'trainingProfileController'
+        .when('/instituteprofile', {
+            templateUrl: 'InstituteProfile.html',
+            controller: 'InstituteProfileController'
         })
         .when('/courseManagement',{
             templateUrl: 'CourseManagement.html',
@@ -27,7 +24,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'StartupManagementController'
         })
         .when('/materialManagement',{
-            templateUrl: 'materialManagement.html',
+            templateUrl: 'MaterialManagement.html',
             controller: 'MaterialManagementController'
         })
 }]);
