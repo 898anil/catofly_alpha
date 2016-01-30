@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="../../assets/css/style.css" media="screen,projection"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     </head>
-    <body ng-app="catofly" ng-controller="startupDashboardController">
+    <body ng-app="catofly" ng-controller="StartupDashboardController">
         <div class="main-container">
             <header class="main-header clearfix">
                 <div class="logo left">
@@ -46,26 +46,23 @@
                                 <a href="#">Dashboard</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#/profile">Profile</a>
+                                <a href="#/startupProfile">Startup Profile</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#/exercises">Exercise</a>
+                                <a href="#/jobManagement">Job Management</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#/quiz">Quiz</a>
+                                <a href="#/materialManagement">Material Management</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#/projects">Projects</a>
-                            </li>
-                            <li class="left-tabs">
-                                <a href="#/materials">Material</a>
+                                <a href="#/hackathon">Hackathon</a>
                             </li>
                             <li class="left-tabs">
                                 <a href="#">Blogs & Articles</a>
                             </li>
                             <li class="left-tabs">
-                                <a href="#">Community</a>
-                            </li>
+                            <a href="#">Community</a>
+                        </li>
                         </ul>
                     </div>
                 </div>
@@ -88,14 +85,13 @@
     <script src="../../assets/js/script.js"></script>
     <script src="../../assets/js/routes/startupDashboardRouting.js"></script>
     <script src="../../assets/js/controllers/startupcontroller/logoutController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupProfileSummaryController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupProfileController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupProjectsController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupExercisesController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupQuizController.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupMaterialController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/StartupProfileSummaryController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/StartupProfileController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/JobManagementController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/HackathonController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/MaterialManagementController.js"></script>
     <script src="../../assets/js/filters/undefinedFilter.js"></script>
     <script src="../../assets/js/services/isLoggedin.js"></script>
-    <script src="../../assets/js/controllers/startupcontroller/startupDashboardController.js"></script>
+    <script src="../../assets/js/controllers/startupcontroller/StartupDashboardController.js"></script>
 
 </html>

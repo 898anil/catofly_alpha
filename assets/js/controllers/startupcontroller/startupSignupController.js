@@ -1,4 +1,4 @@
-app.controller('startupSignupController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('StartupSignupController',['$kinvey','$scope',function($kinvey,$scope){
     $scope.signup = function($event){
         $event.preventDefault();
         console.log('startup signed up');

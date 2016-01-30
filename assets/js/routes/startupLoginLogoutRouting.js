@@ -3,15 +3,15 @@
  */
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/signup', {
-            templateUrl: 'startup_signup.html',
+            templateUrl: 'Startup_signup.html',
             controller: 'startupSignupController'
         })
         .when('/signin', {
-            templateUrl: 'startup_login.html',
+            templateUrl: 'Startup_login.html',
             controller: 'startupLoginController'
         })
         .when('/', {
-            templateUrl: 'startup_login.html',
+            templateUrl: 'Startup_login.html',
             controller: 'startupLoginController'
         })
         .otherwise({

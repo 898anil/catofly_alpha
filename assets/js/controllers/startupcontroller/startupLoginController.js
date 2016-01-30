@@ -1,4 +1,4 @@
-app.controller('startupLoginController',['$kinvey','$scope',function($kinvey,$scope){
+app.controller('StartupLoginController',['$kinvey','$scope',function($kinvey,$scope){
     initpromise.then(
         function(){
             if($kinvey.getActiveUser() !== null)

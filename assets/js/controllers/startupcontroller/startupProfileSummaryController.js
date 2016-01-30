@@ -1,8 +1,8 @@
 
-app.controller('startupProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
+app.controller('StartupProfileSummaryController',['$kinvey','$scope','$rootScope',function($kinvey,$scope,$rootScope){
     initpromise.then(function(){
         if($kinvey.getActiveUser()==null) {
-            location.href = "startup_account.html";
+            location.href = "Startup_account.html";
          }
         else
         {

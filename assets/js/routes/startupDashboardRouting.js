@@ -1,29 +1,25 @@
-/**
- * Created by jellyglass on 27/1/16.
- */
+
 app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/projects', {
-        templateUrl: 'StudentManagement.html',
-        controller: 'startupProjectsController'
-    })
+    $routeProvider
+
         .when('/', {
-        templateUrl: 'InstituteProfile.html',
-        controller: 'startupProfileController'
+        templateUrl: 'StartupProfile.html',
+        controller: 'StartupProfileController'
     })
-        .when('/profile', {
-            templateUrl: 'InstituteProfile.html',
-            controller: 'startupProfileController'
+        .when('/startupProfile', {
+            templateUrl: 'StartupProfile.html',
+            controller: 'StartupProfileController'
         })
-        .when('/exercises',{
-            templateUrl: 'CourseManagement.html',
-            controller: 'startupExercisesController'
+        .when('/jobManagement',{
+            templateUrl: 'JobManagement.html',
+            controller: 'JobManagementController'
         })
-        .when('/quiz',{
-            templateUrl: 'StartupManagement.html',
-            controller: 'startupQuizController'
+        .when('/hackathon',{
+            templateUrl: 'Hackathon.html',
+            controller: 'HackathonController'
         })
-        .when('/materials',{
+        .when('/materialManagement',{
             templateUrl: 'MaterialManagement.html',
-            controller: 'startupMaterialController'
+            controller: 'MaterialManagementController'
         })
 }])
